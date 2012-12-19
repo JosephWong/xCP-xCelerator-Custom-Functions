@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-createDateTime" version="1.0.0000.001">
+
+	<name>createDateTime</name>
+	<description>Returns the DateTime representation specified by year, month, day, hour, minutes and seconds.
+	
+	The timezone will also be based on the timezone of the browser session doing the evaluation.</description>
+	<content src="content/xcp/extended/date/createDateTime.js" type="text/javascript"/>
+
+	<namespace>xcp.extended.functions</namespace>
+	<categoryName>Date</categoryName>
+
+	<returnType isRepeating="false">DATETIME</returnType>
+	<params>
+		<param name="year" required="true">
+			<type isRepeating="false">INTEGER</type>
+		</param>
+		<param name="month" required="true">
+			<type isRepeating="false">INTEGER</type>
+		</param>
+		<param name="day" required="true">
+			<type isRepeating="false">INTEGER</type>
+		</param>
+		<param name="hour" required="false">
+			<type isRepeating="false">INTEGER</type>
+		</param>
+		<param name="minutes" required="false">
+			<type isRepeating="false">INTEGER</type>
+		</param>
+		<param name="seconds" required="false">
+			<type isRepeating="false">INTEGER</type>
+		</param>
+	</params>
+</function>

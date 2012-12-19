@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-ifThenElse" version="1.0.0000.001">
+
+	<name>ifThenElse</name>
+	<description>Returns the appropriate result based on the given boolean expression</description>
+	<content src="content/xcp/extended/string/ifThenElse.js" type="text/javascript"/>
+
+	<namespace>xcp.extended.functions</namespace>
+	<categoryName>String</categoryName>
+
+	<returnType isRepeating="false">ANY</returnType>
+	<params>
+		<param name="expr" required="true">
+			<type isRepeating="false">BOOLEAN</type>
+		</param>
+		<param name="resultIfTrue" required="true">
+			<type isRepeating="false">ANY</type>
+		</param>
+		<param name="resultIfFalse" required="true">
+			<type isRepeating="false">ANY</type>
+		</param>
+	</params>
+</function>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-stringToFloat" version="1.0.0000.001">
+
+	<name>stringToFloat</name>
+	<description>Returns a float casted from a string. Returns 0 if number cannot be parsed.</description>
+	<content src="content/xcp/extended/mathematical/stringToFloat.js" type="text/javascript"/>
+
+	<namespace>xcp.extended.functions</namespace>
+	<categoryName>Mathematical</categoryName>
+
+	<returnType isRepeating="false">FLOAT</returnType>
+	<params>
+		<param name="str" required="true">
+			<type isRepeating="false">STRING</type>
+		</param>
+	</params>
+</function>

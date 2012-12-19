@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-dateToString" version="1.0.0000.001">
+
+	<name>dateToString</name>
+	<description>Returns a String casted from a date.
+ 
+ The date format can be either "short", "medium", "long", 
+ or a custom format using the definitions in the below table.
+ "short", "medium" and "long" formats are locale-specific.
+
+ yyyy - 4-digit representation of year (2012)
+ yy   - 2-digit representation of year (12)
+ MMMM - Full textual representation of month (July)
+ MMM  - Short textual representation of month (Jul)
+ MM   - Numeric representation of month, with leading zeros (07)
+ M    - Numeric representation of month, without leading zeros (7)
+ EEEE - Full textual representation of day (Wednesday)
+ EEE  - Short textual representation of day (Wed)
+ dd   - Numeric representation of day, with leading zeros (04)
+ d    - Numeric representation of day, without leading zeros (4)
+ HH   - 24-hour format of hour with leading zeros (08)
+ H    - 24-hour format of hour without leading zeros (8)
+ hh   - 12-hour format of hour with leading zeros (08)
+ h    - 12-hour format of hour without leading zeros (8)
+ mm   - Minutes representation (11)
+ ss   - Seconds representation (06)
+ S    - Milliseconds representation (083)
+ A    - Uppercase AM or PM
+ a    - Lowercase am or pm
+ zzz  - Timezone abbreviation (PDT)
+ Z    - Numeric timezone representation (-08:00)
+ 
+ Please note that all the strings for the format are case sensitive.
+ If a format is not provided, the JavaScript string representation of a date will be used.
+
+ Example: (assume date is July 4th, 2012, 8:11:06:083 AM PDT)
+ 		dateToString (date) 
+ 		returns "07/04/12 08:11 am" (en_US locale)
+
+ 		dateToString (date, "short") 
+ 		returns "07/04/12 08:11 am" (en_US locale)
+
+ 		dateToString (date, "long") 
+ 		returns "July 04, 2012 08:11:06 am PDT" (en_US locale)
+
+ 		dateToString (date, "d MMM, 'yy h:mm A") 
+ 		returns "4 Jul '12 8:11 AM"
+
+ 		dateToString (date, "EEEE MM/dd/yyyy h:mm:ss.S A Z") 
+ 		returns "Wednesday 07/04/2012 08:11:06.083 AM -08:00"</description>
+	<content src="content/xcp/extended/string/dateToString.js" type="text/javascript"/>
+
+	<namespace>xcp.extended.functions</namespace>
+	<categoryName>String</categoryName>
+
+	<returnType isRepeating="false">STRING</returnType>
+	<params>
+		<param name="date" required="true">
+			<type isRepeating="false">DATETIME</type>
+		</param>
+		<param name="format" required="false">
+			<type isRepeating="false">STRING</type>
+		</param>
+	</params>
+</function>

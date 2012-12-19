@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<function xmlns="http://documentum.emc.com/2010/UI-Model"
+	id="JSFunction-intToString" version="1.0.0000.001">
+
+	<name>intToString</name>
+	<description>Returns a String casted from an integer.</description>
+	<content src="content/xcp/extended/string/intToString.js" type="text/javascript"/>
+
+	<namespace>xcp.extended.functions</namespace>
+	<categoryName>String</categoryName>
+
+	<returnType isRepeating="false">STRING</returnType>
+	<params>
+		<param name="num" required="true">
+			<type isRepeating="false">INTEGER</type>
+		</param>
+	</params>
+</function>
